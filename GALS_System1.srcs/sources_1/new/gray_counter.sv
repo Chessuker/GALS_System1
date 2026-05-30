@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Thawat Boonsuk
 // 
 // Create Date: 04/07/2026 08:27:10 PM
 // Design Name: 

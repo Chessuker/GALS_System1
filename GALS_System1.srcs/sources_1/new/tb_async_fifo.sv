@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Thawat Boonsuk
 // 
 // Create Date: 04/07/2026 10:36:45 PM
 // Design Name: 
@@ -96,7 +96,7 @@ module tb_async_fifo();
             // Thread 2: Consumer (Read & Verify)
             begin
                 int j = 0;
-                r_en = 0; // 초기화
+                r_en = 0;
                 while (j < 50) begin
                     @(posedge rclk);
                     #1;
