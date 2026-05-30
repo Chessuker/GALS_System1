@@ -1,0 +1,377 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Apr 18 17:02:48 2026
+# Process ID         : 17456
+# Current directory  : D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.runs/synth_1
+# Command line       : vivado.exe -log gals_top_mpmc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gals_top_mpmc.tcl
+# Log file           : D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.runs/synth_1/gals_top_mpmc.vds
+# Journal file       : D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-QOCHRTAO
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 7640HS w/ Radeon 760M Graphics     
+# CPU Frequency      : 4292 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16309 MB
+# Swap memory        : 47244 MB
+# Total Virtual      : 63554 MB
+# Available Virtual  : 11619 MB
+#-----------------------------------------------------------
+source gals_top_mpmc.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 553.941 ; gain = 222.512
+Command: read_checkpoint -auto_incremental -incremental D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/utils_1/imports/synth_1/gals_top_3domain.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/utils_1/imports/synth_1/gals_top_3domain.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top gals_top_mpmc -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8268
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.539 ; gain = 542.082
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'q' is not allowed [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/sync_2stage.sv:33]
+INFO: [Synth 8-6157] synthesizing module 'gals_top_mpmc' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'async_fifo' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/async_fifo.sv:23]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dual_port_ram' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dual_port_ram.sv:23]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram' (0#1) [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dual_port_ram.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gray_counter' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gray_counter.sv:23]
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gray_counter' (0#1) [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gray_counter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sync_2stage' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/sync_2stage.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_2stage' (0#1) [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/sync_2stage.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'async_fifo' (0#1) [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/async_fifo.sv:23]
+WARNING: [Synth 8-7071] port 'w_level' of module 'async_fifo' is unconnected for instance 'u_in_fifo' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:112]
+WARNING: [Synth 8-7023] instance 'u_in_fifo' of module 'async_fifo' has 11 connections declared, but only 10 given [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:112]
+WARNING: [Synth 8-7071] port 'w_level' of module 'async_fifo' is unconnected for instance 'u_in_fifo' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:112]
+WARNING: [Synth 8-7023] instance 'u_in_fifo' of module 'async_fifo' has 11 connections declared, but only 10 given [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:112]
+WARNING: [Synth 8-7071] port 'w_level' of module 'async_fifo' is unconnected for instance 'u_in_fifo' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:112]
+WARNING: [Synth 8-7023] instance 'u_in_fifo' of module 'async_fifo' has 11 connections declared, but only 10 given [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:112]
+INFO: [Synth 8-6157] synthesizing module 'hw_queue_descriptor' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/hw_queue_descriptor.sv:23]
+	Parameter NUM_PRODUCERS bound to: 3 - type: integer 
+	Parameter NUM_CONSUMERS bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'hw_queue_descriptor' (0#1) [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/hw_queue_descriptor.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_controller_fsm' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dvfs_controller_fsm.sv:23]
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dvfs_controller_fsm.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_controller_fsm' (0#1) [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dvfs_controller_fsm.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sync_2stage__parameterized0' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/sync_2stage.sv:23]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_2stage__parameterized0' (0#1) [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/sync_2stage.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_clock_divider' [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dvfs_clock_divider.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_clock_divider' (0#1) [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dvfs_clock_divider.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'gals_top_mpmc' (0#1) [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element p1_throttle_reg was removed.  [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:52]
+WARNING: [Synth 8-6014] Unused sequential element p2_throttle_reg was removed.  [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element p3_throttle_reg was removed.  [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv:84]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.227 ; gain = 662.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.227 ; gain = 662.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.227 ; gain = 662.770
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1408.227 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_P1_IBUF'. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clk_P2_IBUF'. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clk_P3_IBUF'. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clk_B_IBUF'. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clk_C1_IBUF'. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clk_C2_IBUF'. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1482.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1482.090 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1482.090 ; gain = 736.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1482.090 ; gain = 736.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1482.090 ; gain = 736.633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'hw_queue_descriptor'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'dvfs_controller_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+               READ_FIFO |                              010 |                               01
+               WRITE_OUT |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'hw_queue_descriptor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             MODE_NORMAL |                               00 |                               01
+              MODE_TURBO |                               01 |                               00
+                MODE_ECO |                               10 |                               10
+              MODE_SLEEP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'dvfs_controller_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1482.090 ; gain = 736.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 20    
+	   3 Input    5 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      5 Bit         XORs := 10    
+	   2 Input      2 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	                8 Bit    Registers := 10    
+	                5 Bit    Registers := 40    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	              128 Bit	(16 X 8 bit)          RAMs := 5     
++---Muxes : 
+	   3 Input    8 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 7     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1482.090 ; gain = 736.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------+---------------------------------------------+-----------+----------------------+-------------+
+|Module Name   | RTL Object                                  | Inference | Size (Depth x Width) | Primitives  | 
++--------------+---------------------------------------------+-----------+----------------------+-------------+
+|gals_top_mpmc | gen_input_fifos[0].u_in_fifo/dp_ram/mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|gals_top_mpmc | gen_input_fifos[1].u_in_fifo/dp_ram/mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|gals_top_mpmc | gen_input_fifos[2].u_in_fifo/dp_ram/mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|gals_top_mpmc | u_out_fifo_1/dp_ram/mem_reg                 | Implied   | 16 x 8               | RAM32M x 2  | 
+|gals_top_mpmc | u_out_fifo_2/dp_ram/mem_reg                 | Implied   | 16 x 8               | RAM32M x 2  | 
++--------------+---------------------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 1602.559 ; gain = 857.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1638.629 ; gain = 893.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------+---------------------------------------------+-----------+----------------------+-------------+
+|Module Name   | RTL Object                                  | Inference | Size (Depth x Width) | Primitives  | 
++--------------+---------------------------------------------+-----------+----------------------+-------------+
+|gals_top_mpmc | gen_input_fifos[0].u_in_fifo/dp_ram/mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|gals_top_mpmc | gen_input_fifos[1].u_in_fifo/dp_ram/mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|gals_top_mpmc | gen_input_fifos[2].u_in_fifo/dp_ram/mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|gals_top_mpmc | u_out_fifo_1/dp_ram/mem_reg                 | Implied   | 16 x 8               | RAM32M x 2  | 
+|gals_top_mpmc | u_out_fifo_2/dp_ram/mem_reg                 | Implied   | 16 x 8               | RAM32M x 2  | 
++--------------+---------------------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1638.629 ; gain = 893.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1866.340 ; gain = 1120.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1866.340 ; gain = 1120.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1866.340 ; gain = 1120.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1866.340 ; gain = 1120.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1866.340 ; gain = 1120.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1866.340 ; gain = 1120.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     6|
+|2     |LUT1     |    16|
+|3     |LUT2     |    17|
+|4     |LUT3     |    40|
+|5     |LUT4     |    45|
+|6     |LUT5     |    59|
+|7     |LUT6     |    69|
+|8     |MUXF7    |     2|
+|9     |RAM32M   |     5|
+|10    |RAM32X1D |    10|
+|11    |FDCE     |   246|
+|12    |FDPE     |    17|
+|13    |FDRE     |    40|
+|14    |IBUF     |    12|
+|15    |OBUF     |    18|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1866.340 ; gain = 1120.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1866.340 ; gain = 1047.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1866.340 ; gain = 1120.883
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1875.477 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1879.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances
+
+Synth Design complete | Checksum: afdafe2a
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 16 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:07 . Memory (MB): peak = 1879.180 ; gain = 1319.586
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1879.180 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.runs/synth_1/gals_top_mpmc.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file gals_top_mpmc_utilization_synth.rpt -pb gals_top_mpmc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 18 17:04:27 2026...

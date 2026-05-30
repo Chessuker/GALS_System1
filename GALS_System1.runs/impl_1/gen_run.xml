@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1776506564">
+  <File Type="PA-TCL" Name="gals_top_mpmc.tcl"/>
+  <File Type="REPORTS-TCL" Name="gals_top_mpmc_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="gals_top_mpmc_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="gals_top_mpmc_opt.dcp"/>
+  <File Type="OPT-DRC" Name="gals_top_mpmc_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="gals_top_mpmc_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="gals_top_mpmc_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="gals_top_mpmc_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="gals_top_mpmc.hwdef"/>
+  <File Type="OPT-TIMING" Name="gals_top_mpmc_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="gals_top_mpmc_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="gals_top_mpmc_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="gals_top_mpmc_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="gals_top_mpmc_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="gals_top_mpmc_placed.dcp"/>
+  <File Type="PLACE-IO" Name="gals_top_mpmc_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="gals_top_mpmc_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="gals_top_mpmc_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="gals_top_mpmc_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="gals_top_mpmc_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="gals_top_mpmc_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="gals_top_mpmc_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="gals_top_mpmc_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="gals_top_mpmc_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="gals_top_mpmc_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="gals_top_mpmc_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="gals_top_mpmc_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="gals_top_mpmc_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="gals_top_mpmc_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="gals_top_mpmc_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="gals_top_mpmc_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="gals_top_mpmc_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="gals_top_mpmc_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="gals_top_mpmc_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="gals_top_mpmc_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="gals_top_mpmc_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="gals_top_mpmc_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="gals_top_mpmc_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="gals_top_mpmc_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="gals_top_mpmc_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="gals_top_mpmc_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="gals_top_mpmc_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="gals_top_mpmc_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="gals_top_mpmc_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="gals_top_mpmc_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="gals_top_mpmc_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="gals_top_mpmc_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="gals_top_mpmc_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="gals_top_mpmc_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="gals_top_mpmc_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="gals_top_mpmc_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="gals_top_mpmc_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="gals_top_mpmc_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="gals_top_mpmc_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="gals_top_mpmc_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="gals_top_mpmc_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="gals_top_mpmc_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="gals_top_mpmc_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="gals_top_mpmc_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="gals_top_mpmc_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="gals_top_mpmc_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="gals_top_mpmc_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="gals_top_mpmc.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="gals_top_mpmc.ncr"/>
+  <File Type="BG-BIT" Name="gals_top_mpmc.bit"/>
+  <File Type="BG-BIN" Name="gals_top_mpmc.bin"/>
+  <File Type="BITSTR-MSK" Name="gals_top_mpmc.msk"/>
+  <File Type="BITSTR-RBT" Name="gals_top_mpmc.rbt"/>
+  <File Type="BITSTR-NKY" Name="gals_top_mpmc.nky"/>
+  <File Type="BITSTR-BMM" Name="gals_top_mpmc_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="gals_top_mpmc.mmi"/>
+  <File Type="PDI-FILE" Name="gals_top_mpmc.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="gals_top_mpmc_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="gals_top_mpmc_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="gals_top_mpmc.rcfi"/>
+  <File Type="CFI_FILE" Name="gals_top_mpmc.cfi"/>
+  <File Type="RNPI_FILE" Name="gals_top_mpmc.rnpi"/>
+  <File Type="RCDO-FILE" Name="gals_top_mpmc.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="gals_top_mpmc_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="gals_top_mpmc_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="gals_top_mpmc_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="gals_top_mpmc_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="gals_top_mpmc_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="gals_top_mpmc_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="gals_top_mpmc_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="gals_top_mpmc_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="gals_top_mpmc_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="gals_top_mpmc_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="gals_top_mpmc_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="gals_top_mpmc_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="gals_top_mpmc_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="gals_top_mpmc_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="gals_top_mpmc_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="gals_top_mpmc.npi"/>
+  <File Type="RBD_FILE" Name="gals_top_mpmc.rbd"/>
+  <File Type="MMI-FILE" Name="gals_top_mpmc.mmi"/>
+  <File Type="BIF-FILE" Name="gals_top_mpmc.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="gals_top_mpmc_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="gals_top_mpmc_pld.bif"/>
+  <File Type="LTX-FILE" Name="gals_top_mpmc.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="gals_top_mpmc_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="gals_top_mpmc_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="gals_top_mpmc.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="gals_top_mpmc.sysdef"/>
+  <File Type="BG-BGN" Name="gals_top_mpmc.bgn"/>
+  <File Type="BG-DRC" Name="gals_top_mpmc.drc"/>
+  <File Type="RDI-RDI" Name="gals_top_mpmc.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="gals_top_mpmc_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="gals_top_mpmc_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/tb_async_fifo.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gals_top.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_gals_top.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_gals_top_3domain.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_tx.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_gals_mpmc.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/consumer_core.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/processor_core.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/producer_adaptive_fsm.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gals_top_3domain.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/async_fifo.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dual_port_ram.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dvfs_clock_divider.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dvfs_controller_fsm.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gray_counter.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hw_queue_descriptor.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sync_2stage.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gals_top_mpmc.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="gals_top_mpmc"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraint.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/gals_top_3domain.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

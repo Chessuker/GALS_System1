@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/async_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module async_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dual_port_ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_port_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dvfs_clock_divider.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dvfs_clock_divider
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/dvfs_controller_fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dvfs_controller_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gals_top_mpmc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gals_top_mpmc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/gray_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gray_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/hw_queue_descriptor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw_queue_descriptor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/sync_2stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_2stage
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'q' is not allowed [D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/sync_2stage.sv:33]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OpalFolder/MyOwnProject/FPGA/GALS_System1/GALS_System1.srcs/sources_1/new/tb_gals_mpmc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_gals_mpmc

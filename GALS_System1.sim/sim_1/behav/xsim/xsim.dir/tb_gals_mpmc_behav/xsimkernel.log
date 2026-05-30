@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_gals_mpmc_behav/xsimk.exe -simmode gui -wdb tb_gals_mpmc_behav.wdb -simrunnum 0 -socket 63462
+Design successfully loaded
+Design Loading Memory Usage: 10100 KB (Peak: 10100 KB)
+Design Loading CPU Usage: 109 ms
